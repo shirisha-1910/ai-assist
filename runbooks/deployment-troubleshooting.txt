@@ -1,0 +1,16 @@
+Deployment Troubleshooting Runbook
+
+Problem: Kubernetes deployment failed.
+
+Troubleshooting steps:
+
+1. Check the status of the pods using kubectl get pods.
+2. Check pod events using kubectl describe pod.
+3. Check application logs using kubectl logs.
+4. Verify that the Docker image exists and can be pulled.
+5. Check the Kubernetes Deployment configuration.
+6. Check whether required environment variables are configured.
+7. Check the Kubernetes Service configuration.
+8. If the pod is restarting, inspect the application logs for errors.
+9. Check whether the required resources such as CPU and memory are available.
+10. If the issue is related to an image pull, verify the image name and registry credentials.
